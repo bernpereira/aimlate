@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="images/project-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#123035" />
+    <meta name="description" content="AI and Media Literacy: A Toolkit for Educators — an Erasmus+ Small-scale partnership in school education (KA210-SCH) between Italy, Serbia and Portugal." />
+    <title>AI and Media Literacy · A Toolkit for Educators — Erasmus+ KA210-SCH</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="bg-cream text-teal-ink font-sans-ui">
+    <main data-testid="landing-page">
+
+      <!-- ============= NAV ============= -->
+      <header id="nav" data-testid="site-nav" class="fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-transparent">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+          <a href="#hero" class="flex items-center gap-3" data-testid="nav-logo-link">
+            <img src="images/project-logo.png" alt="AI and Media Literacy" class="h-11 w-11 object-contain" />
+            <div class="leading-tight hidden sm:block">
+              <div class="font-serif-display text-[1.05rem] font-semibold text-teal-ink">AI &amp; Media Literacy</div>
+              <div class="label-eyebrow text-muted-ink">A Toolkit for Educators</div>
+            </div>
+          </a>
+
+          <nav class="hidden lg:flex items-center gap-8">
+            <a href="#about" class="text-[0.92rem] text-teal-ink/80 hover:text-teal-ink transition-colors">About</a>
+            <a href="#countries" class="text-[0.92rem] text-teal-ink/80 hover:text-teal-ink transition-colors">Partners</a>
+            <a href="#toolkit" class="text-[0.92rem] text-teal-ink/80 hover:text-teal-ink transition-colors">Toolkit</a>
+            <a href="#topics" class="text-[0.92rem] text-teal-ink/80 hover:text-teal-ink transition-colors">Topics</a>
+            <a href="#timeline" class="text-[0.92rem] text-teal-ink/80 hover:text-teal-ink transition-colors">Timeline</a>
+            <a href="#contact" class="text-[0.92rem] text-teal-ink/80 hover:text-teal-ink transition-colors">Contact</a>
+          </nav>
+
+          <div class="flex items-center gap-3">
+            <a href="#about" class="btn-teal hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium">
+              About the project
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+            <button id="mobile-toggle" class="lg:hidden p-2 rounded-full border border-teal-ink/15" aria-label="Toggle menu">
+              <svg id="icon-menu" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+              <svg id="icon-close" class="hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-cream border-t border-teal-ink/10 px-6 py-6 flex-col gap-4">
+          <a href="#about" class="block py-2 text-teal-ink">About</a>
+          <a href="#countries" class="block py-2 text-teal-ink">Partners</a>
+          <a href="#toolkit" class="block py-2 text-teal-ink">Toolkit</a>
+          <a href="#topics" class="block py-2 text-teal-ink">Topics</a>
+          <a href="#timeline" class="block py-2 text-teal-ink">Timeline</a>
+          <a href="#contact" class="block py-2 text-teal-ink">Contact</a>
+        </div>
+      </header>
+
+      <!-- ============= HERO ============= -->
+      <section id="hero" class="relative pt-32 pb-24 lg:pt-40 lg:pb-32 overflow-hidden grain">
+        <div class="absolute -top-24 -right-24 w-[520px] h-[520px] rounded-full bg-terracotta/15 blur-3xl"></div>
+        <div class="absolute -bottom-32 -left-20 w-[420px] h-[420px] rounded-full bg-teal/20 blur-3xl"></div>
+        <svg aria-hidden="true" class="absolute top-24 left-6 lg:left-16 w-28 h-28 text-terracotta/40 float-slow" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" stroke-width="1" />
+          <circle cx="50" cy="50" r="36" fill="none" stroke="currentColor" stroke-width="1" />
+          <circle cx="50" cy="50" r="24" fill="none" stroke="currentColor" stroke-width="1" />
+          <circle cx="50" cy="50" r="6" fill="currentColor" />
+        </svg>
+
+        <div class="relative max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-7 fade-up">
+            <div class="flex flex-wrap items-center gap-3 mb-6">
+              <span class="label-eyebrow text-terracotta">Erasmus+ KA210-SCH · 2025</span>
+              <span class="w-10 h-px bg-teal-ink/30"></span>
+              <span class="label-eyebrow text-teal-ink/70">IT · RS · PT</span>
+            </div>
+
+            <h1 class="font-serif-display text-[3rem] sm:text-[4rem] lg:text-[5.5rem] leading-[0.95] text-teal-ink">
+              Teaching truth in<br />
+              an age of <em class="italic text-terracotta">artificial</em><br />
+              intelligence.
+            </h1>
+
+            <p class="mt-8 max-w-xl text-lg text-muted-ink leading-relaxed">
+              A small-scale Erasmus+ partnership in school education, built together by educators
+              from <strong class="text-teal-ink font-medium">Italy</strong>,
+              <strong class="text-teal-ink font-medium">Serbia</strong> and
+              <strong class="text-teal-ink font-medium">Portugal</strong> to address
+              <em>AI literacy, misinformation, deepfakes and fake news</em> in the classroom —
+              with ready-to-use scenarios for ages 12&ndash;16.
+            </p>
+
+            <div class="mt-10 flex flex-wrap items-center gap-4">
+              <a href="#about" class="btn-teal inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-medium">
+                About the project
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+              <a href="#countries" class="btn-ghost-ink inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-medium">Meet the partners</a>
+            </div>
+
+            <div class="mt-12 flex items-center gap-6">
+              <img src="images/erasmus-logo.png" alt="Erasmus+" class="h-10 object-contain" />
+              <div class="text-xs text-muted-ink max-w-sm leading-snug">
+                Co-funded by the European Union under the Erasmus+ Programme —
+                <span class="text-teal-ink font-medium">Small-scale partnerships in school education (KA210-SCH).</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 relative">
+            <div class="relative aspect-square max-w-md mx-auto">
+              <div class="absolute inset-6 rounded-full bg-cream-alt border border-teal-ink/10"></div>
+              <div class="absolute inset-12 rounded-full bg-terracotta/10"></div>
+              <img src="images/project-logo.png" alt="AI and Media Literacy project logo" class="relative z-10 w-full h-full object-contain p-8 float-slow" />
+              <div class="absolute -bottom-6 -right-2 card-paper rounded-3xl px-5 py-4 flex items-center gap-3 max-w-[280px]">
+                <svg class="w-5 h-5 text-terracotta shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                <div class="text-xs text-teal-ink leading-snug">
+                  <div class="font-medium">AIMLATE — KA210-SCH-5B5F9374</div>
+                  <div class="text-muted-ink">20 months · Sep 2025 — Apr 2027</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============= ABOUT ============= -->
+      <section id="about" class="relative py-24 lg:py-32">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-16 items-center">
+          <div class="lg:col-span-6 relative">
+            <div class="relative rounded-[2rem] overflow-hidden border border-teal-ink/10">
+              <img src="images/classroom.jpg" alt="Teacher and students working with media" class="w-full h-[480px] object-cover" />
+            </div>
+            <div class="absolute -bottom-8 -left-6 hidden md:block">
+              <div class="w-32 h-32 rounded-full bg-terracotta/90 text-white flex flex-col items-center justify-center text-center p-4 shadow-xl">
+                <div class="font-serif-display text-3xl leading-none">25%</div>
+                <div class="label-eyebrow !tracking-[0.18em] text-white/90 mt-1">AI literacy</div>
+              </div>
+            </div>
+            <div class="absolute -top-6 -right-6 hidden md:block">
+              <div class="w-24 h-24 rounded-full bg-teal-ink text-cream flex items-center justify-center">
+                <div class="text-center">
+                  <div class="font-serif-display text-xl leading-none">KA210</div>
+                  <div class="text-[10px] uppercase tracking-widest opacity-80 mt-1">SCH</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6">
+            <div class="label-eyebrow text-terracotta mb-5">About the project</div>
+            <h2 class="font-serif-display text-4xl sm:text-5xl lg:text-6xl text-teal-ink leading-[1.02]">
+              A shared classroom for a borderless information age.
+            </h2>
+            <p class="mt-8 text-lg text-muted-ink leading-relaxed">
+              <strong class="text-teal-ink font-medium">AI and Media Literacy: A Toolkit for Educators</strong> (AIMLATE) is a small-scale Erasmus+ partnership in school education that equips teachers and students with the AI literacy skills needed to analyse AI-generated misinformation and navigate digital content critically.
+            </p>
+            <p class="mt-4 text-base text-muted-ink leading-relaxed">
+              The project targets a 25% improvement in educators' AI literacy, with 80% of trained teachers integrating the toolkit into their curricula within six months, a 30% increase in students' critical thinking, and a 20% reduction in AI-driven cyberbullying and misinformation manipulation in pilot schools.
+            </p>
+            <p class="mt-4 text-base text-muted-ink leading-relaxed">
+              Outputs include structured lesson plans, interactive exercises, case studies, fact-checking simulations, ethical AI discussions and gamified learning modules — piloted across three EU countries.
+            </p>
+            <div class="mt-10 grid grid-cols-4 gap-6">
+              <div class="border-t border-teal-ink/15 pt-4"><div class="font-serif-display text-3xl text-teal-ink">3</div><div class="text-[10px] uppercase tracking-widest text-muted-ink mt-1">Countries</div></div>
+              <div class="border-t border-teal-ink/15 pt-4"><div class="font-serif-display text-3xl text-teal-ink">20</div><div class="text-[10px] uppercase tracking-widest text-muted-ink mt-1">Months</div></div>
+              <div class="border-t border-teal-ink/15 pt-4"><div class="font-serif-display text-3xl text-teal-ink">9</div><div class="text-[10px] uppercase tracking-widest text-muted-ink mt-1">Activities</div></div>
+              <div class="border-t border-teal-ink/15 pt-4"><div class="font-serif-display text-3xl text-teal-ink">12–16</div><div class="text-[10px] uppercase tracking-widest text-muted-ink mt-1">Age group</div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============= COUNTRIES ============= -->
+      <section id="countries" class="relative py-24 lg:py-32 bg-cream-alt">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-16">
+            <div class="max-w-2xl">
+              <div class="label-eyebrow text-terracotta mb-4">Coordinator &amp; partners</div>
+              <h2 class="font-serif-display text-4xl sm:text-5xl text-teal-ink leading-tight">Three classrooms,<br /><em class="italic text-terracotta">one conversation.</em></h2>
+            </div>
+            <p class="text-base text-muted-ink max-w-md">A coordinator school in southern Italy and two partner organisations across Serbia and Portugal — bringing together pedagogy, research and media literacy expertise.</p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-8">
+
+            <article class="group card-paper rounded-3xl overflow-hidden transition-all duration-300 hover:-translate-y-1">
+              <div class="relative h-56 overflow-hidden bg-cream-alt">
+                <img src="images/italy.jpg" alt="Spezzano Piccolo, Italy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <div class="absolute top-4 left-4 bg-cream/90 backdrop-blur px-3 py-1.5 rounded-full flex items-center gap-2">
+                  <span class="text-xl leading-none">🇮🇹</span><span class="text-xs font-medium text-teal-ink">Italy</span>
+                </div>
+                <div class="absolute top-4 right-4 px-3 py-1 rounded-full bg-teal-ink/90 text-cream text-[10px] uppercase tracking-widest font-medium">Coordinator</div>
+                <div class="absolute bottom-3 left-4 right-4 text-[11px] text-white/95 italic">Spezzano Piccolo · Province of Cosenza · Calabria</div>
+              </div>
+              <div class="p-7">
+                <div class="label-eyebrow text-terracotta mb-3">Partner 01</div>
+                <h3 class="font-serif-display text-[1.45rem] text-teal-ink leading-tight">Istituto Comprensivo Casali del Manco — Pietrafitta</h3>
+                <p class="mt-4 text-sm text-muted-ink leading-relaxed">From the village of Spezzano Piccolo in the province of Cosenza, southern Italy, the coordinator school leads project management, pedagogy and the overall co-design of the toolkit.</p>
+                <div class="mt-6 inline-flex items-center gap-2 text-xs text-teal-ink/80">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  Spezzano Piccolo, Italy
+                </div>
+              </div>
+            </article>
+
+            <article class="group card-paper rounded-3xl overflow-hidden transition-all duration-300 hover:-translate-y-1">
+              <div class="relative h-56 overflow-hidden bg-cream-alt">
+                <img src="images/serbia.jpg" alt="Požarevac, Serbia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <div class="absolute top-4 left-4 bg-cream/90 backdrop-blur px-3 py-1.5 rounded-full flex items-center gap-2">
+                  <span class="text-xl leading-none">🇷🇸</span><span class="text-xs font-medium text-teal-ink">Serbia</span>
+                </div>
+                <div class="absolute top-4 right-4 px-3 py-1 rounded-full bg-teal-ink/90 text-cream text-[10px] uppercase tracking-widest font-medium">Partner</div>
+                <div class="absolute bottom-3 left-4 right-4 text-[11px] text-white/95 italic">Požarevac · Braničevo District</div>
+              </div>
+              <div class="p-7">
+                <div class="label-eyebrow text-terracotta mb-3">Partner 02</div>
+                <h3 class="font-serif-display text-[1.45rem] text-teal-ink leading-tight">Asocijacija za edukaciju omladine i odraslih</h3>
+                <p class="mt-4 text-sm text-muted-ink leading-relaxed">From eastern Serbia, the partner brings expertise in youth and adult education, focusing on research on AI and misinformation in school contexts.</p>
+                <div class="mt-6 inline-flex items-center gap-2 text-xs text-teal-ink/80">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  Požarevac, Serbia
+                </div>
+              </div>
+            </article>
+
+            <article class="group card-paper rounded-3xl overflow-hidden transition-all duration-300 hover:-translate-y-1">
+              <div class="relative h-56 overflow-hidden bg-cream-alt">
+                <img src="images/portugal.webp" alt="Funchal, Madeira, Portugal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <div class="absolute top-4 left-4 bg-cream/90 backdrop-blur px-3 py-1.5 rounded-full flex items-center gap-2">
+                  <span class="text-xl leading-none">🇵🇹</span><span class="text-xs font-medium text-teal-ink">Portugal</span>
+                </div>
+                <div class="absolute top-4 right-4 px-3 py-1 rounded-full bg-teal-ink/90 text-cream text-[10px] uppercase tracking-widest font-medium">Partner</div>
+                <div class="absolute bottom-3 left-4 right-4 text-[11px] text-white/95 italic">Funchal · Madeira</div>
+              </div>
+              <div class="p-7">
+                <div class="label-eyebrow text-terracotta mb-3">Partner 03</div>
+                <h3 class="font-serif-display text-[1.45rem] text-teal-ink leading-tight">Escola Básica e Secundária Gonçalves Zarco</h3>
+                <p class="mt-4 text-sm text-muted-ink leading-relaxed">From the island of Madeira, the partner school anchors media literacy practice, classroom piloting and project dissemination across communities.</p>
+                <div class="mt-6 inline-flex items-center gap-2 text-xs text-teal-ink/80">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  Funchal, Portugal
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============= TOOLKIT ============= -->
+      <section id="toolkit" class="relative py-24 lg:py-32">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <div class="max-w-3xl mb-16">
+            <div class="label-eyebrow text-terracotta mb-4">The toolkit</div>
+            <h2 class="font-serif-display text-4xl sm:text-5xl lg:text-6xl text-teal-ink leading-[1.02]">Four modules. <em class="italic">Endless</em> classroom conversations.</h2>
+            <p class="mt-6 text-lg text-muted-ink">Each module bundles teacher notes, learning outcomes, materials and step-by-step activities — designed for direct classroom use. The toolkit is currently under development and piloting; it is not yet publicly downloadable.</p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+
+            <div class="card-paper rounded-3xl p-8 lg:p-10 flex gap-6 items-start hover:-translate-y-1 transition-transform duration-300">
+              <div class="w-14 h-14 rounded-2xl bg-teal-ink text-cream flex items-center justify-center shrink-0">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8z"/></svg>
+              </div>
+              <div>
+                <div class="label-eyebrow text-terracotta mb-2">Module 01</div>
+                <h3 class="font-serif-display text-2xl lg:text-3xl text-teal-ink leading-tight">Misinformation &amp; Verification</h3>
+                <p class="mt-3 text-[0.95rem] text-muted-ink leading-relaxed">Fact-checking habits, reverse image search, emotional-manipulation awareness, and verification checklists.</p>
+              </div>
+            </div>
+
+            <div class="card-paper rounded-3xl p-8 lg:p-10 flex gap-6 items-start hover:-translate-y-1 transition-transform duration-300">
+              <div class="w-14 h-14 rounded-2xl bg-teal-ink text-cream flex items-center justify-center shrink-0">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2z"/></svg>
+              </div>
+              <div>
+                <div class="label-eyebrow text-terracotta mb-2">Module 02</div>
+                <h3 class="font-serif-display text-2xl lg:text-3xl text-teal-ink leading-tight">AI-Generated Content &amp; Detection</h3>
+                <p class="mt-3 text-[0.95rem] text-muted-ink leading-relaxed">Deepfake awareness, synthetic voices, AI image clues, AI text analysis, and ethical use of generative tools.</p>
+              </div>
+            </div>
+
+            <div class="card-paper rounded-3xl p-8 lg:p-10 flex gap-6 items-start hover:-translate-y-1 transition-transform duration-300">
+              <div class="w-14 h-14 rounded-2xl bg-teal-ink text-cream flex items-center justify-center shrink-0">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              </div>
+              <div>
+                <div class="label-eyebrow text-terracotta mb-2">Module 03</div>
+                <h3 class="font-serif-display text-2xl lg:text-3xl text-teal-ink leading-tight">Algorithms, Bias &amp; Ethics</h3>
+                <p class="mt-3 text-[0.95rem] text-muted-ink leading-relaxed">Filter bubbles, data bias, inclusivity, and the role of AI in everyday decisions and classroom debates.</p>
+              </div>
+            </div>
+
+            <div class="card-paper rounded-3xl p-8 lg:p-10 flex gap-6 items-start hover:-translate-y-1 transition-transform duration-300">
+              <div class="w-14 h-14 rounded-2xl bg-teal-ink text-cream flex items-center justify-center shrink-0">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+              </div>
+              <div>
+                <div class="label-eyebrow text-terracotta mb-2">Module 04</div>
+                <h3 class="font-serif-display text-2xl lg:text-3xl text-teal-ink leading-tight">Digital Safety &amp; Responsible Use</h3>
+                <p class="mt-3 text-[0.95rem] text-muted-ink leading-relaxed">Strong passwords, scams &amp; phishing, digital footprints, cyberbullying, and responsible AI in schools.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============= TOPICS ============= -->
+      <section id="topics" class="relative py-24 lg:py-32 bg-teal-ink text-cream overflow-hidden">
+        <div class="absolute inset-0 grain-light pointer-events-none"></div>
+        <div class="absolute -top-32 -right-32 w-[420px] h-[420px] rounded-full bg-terracotta/30 blur-3xl"></div>
+        <div class="absolute -bottom-32 -left-20 w-[420px] h-[420px] rounded-full bg-teal/30 blur-3xl"></div>
+
+        <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
+          <div class="grid lg:grid-cols-12 gap-12 items-end mb-14">
+            <div class="lg:col-span-7">
+              <div class="label-eyebrow !text-yellow mb-4">Topics &amp; scenarios</div>
+              <h2 class="font-serif-display text-4xl sm:text-5xl lg:text-6xl leading-[1.02]">The questions your students <em class="italic text-terracotta">are already asking.</em></h2>
+            </div>
+            <p class="lg:col-span-5 text-base text-cream/75">From scrolling habits to synthetic faces, the toolkit gives you the vocabulary, examples and activities to meet students where they already live online.</p>
+          </div>
+
+          <div class="flex flex-wrap gap-3 mb-16">
+            <div class="topic-chip"><span>Artificial Intelligence</span></div>
+            <div class="topic-chip"><span>Misinformation</span></div>
+            <div class="topic-chip"><span>Deepfakes</span></div>
+            <div class="topic-chip"><span>Fake News</span></div>
+            <div class="topic-chip"><span>Algorithmic Bias</span></div>
+            <div class="topic-chip"><span>Digital Safety</span></div>
+          </div>
+
+          <div class="grid md:grid-cols-6 gap-5">
+            <article class="scenario-card md:col-span-4">
+              <div class="flex items-center justify-between mb-6"><span class="label-eyebrow !text-yellow">Scenario A1</span></div>
+              <h3 class="font-serif-display text-2xl lg:text-3xl leading-tight text-cream">Viral Post Under the Microscope</h3>
+              <p class="mt-3 text-sm text-cream/75 leading-relaxed">Students dissect a viral post using the Five Verification Questions and reflect on responsible sharing.</p>
+              <div class="mt-6 inline-flex items-center gap-2 text-xs text-cream/70"><span class="w-2 h-2 rounded-full bg-terracotta"></span>Misinformation</div>
+            </article>
+            <article class="scenario-card md:col-span-2">
+              <div class="flex items-center justify-between mb-6"><span class="label-eyebrow !text-yellow">Scenario B2</span></div>
+              <h3 class="font-serif-display text-2xl lg:text-3xl leading-tight text-cream">Deepfake Awareness</h3>
+              <p class="mt-3 text-sm text-cream/75 leading-relaxed">Spotting synthetic media, comparing AI vs. human-made content, and discussing trust online.</p>
+              <div class="mt-6 inline-flex items-center gap-2 text-xs text-cream/70"><span class="w-2 h-2 rounded-full bg-terracotta"></span>AI Detection</div>
+            </article>
+            <article class="scenario-card md:col-span-2">
+              <div class="flex items-center justify-between mb-6"><span class="label-eyebrow !text-yellow">Scenario C1</span></div>
+              <h3 class="font-serif-display text-2xl lg:text-3xl leading-tight text-cream">Bias in Data</h3>
+              <p class="mt-3 text-sm text-cream/75 leading-relaxed">Exploring algorithmic bias through case studies and asking who gets left out of the dataset.</p>
+              <div class="mt-6 inline-flex items-center gap-2 text-xs text-cream/70"><span class="w-2 h-2 rounded-full bg-terracotta"></span>Algorithms</div>
+            </article>
+            <article class="scenario-card md:col-span-4">
+              <div class="flex items-center justify-between mb-6"><span class="label-eyebrow !text-yellow">Scenario D3</span></div>
+              <h3 class="font-serif-display text-2xl lg:text-3xl leading-tight text-cream">Scams &amp; Phishing</h3>
+              <p class="mt-3 text-sm text-cream/75 leading-relaxed">Recognising red flags in messages and emails, and building reflexes for safer browsing.</p>
+              <div class="mt-6 inline-flex items-center gap-2 text-xs text-cream/70"><span class="w-2 h-2 rounded-full bg-terracotta"></span>Digital Safety</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============= FACTS ============= -->
+      <section id="facts" class="relative py-20 lg:py-28 bg-cream-alt">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <div class="card-paper rounded-3xl p-8 lg:p-12 grid lg:grid-cols-12 gap-8 items-start">
+            <div class="lg:col-span-5">
+              <div class="label-eyebrow text-terracotta mb-4">Project at a glance</div>
+              <h3 class="font-serif-display text-3xl sm:text-4xl text-teal-ink leading-tight">Small-scale partnerships in school education <em class="italic text-terracotta">(KA210-SCH).</em></h3>
+              <p class="mt-5 text-sm text-muted-ink leading-relaxed">The official identifiers and dates of the project — for educators, partners and stakeholders evaluating cross-border cooperation.</p>
+            </div>
+            <dl class="lg:col-span-7 grid sm:grid-cols-2 gap-5">
+              <div class="border-t border-teal-ink/15 pt-4"><dt class="text-[10px] uppercase tracking-widest text-muted-ink">Project code</dt><dd class="font-serif-display text-xl text-teal-ink leading-snug mt-1">KA210-SCH-5B5F9374</dd></div>
+              <div class="border-t border-teal-ink/15 pt-4"><dt class="text-[10px] uppercase tracking-widest text-muted-ink">Acronym</dt><dd class="font-serif-display text-xl text-teal-ink leading-snug mt-1">AIMLATE</dd></div>
+              <div class="border-t border-teal-ink/15 pt-4"><dt class="text-[10px] uppercase tracking-widest text-muted-ink">Action</dt><dd class="font-serif-display text-xl text-teal-ink leading-snug mt-1">Small-scale partnerships in school education</dd></div>
+              <div class="border-t border-teal-ink/15 pt-4"><dt class="text-[10px] uppercase tracking-widest text-muted-ink">Call · Round</dt><dd class="font-serif-display text-xl text-teal-ink leading-snug mt-1">2025 · Round 1</dd></div>
+              <div class="border-t border-teal-ink/15 pt-4"><dt class="text-[10px] uppercase tracking-widest text-muted-ink">Duration</dt><dd class="font-serif-display text-xl text-teal-ink leading-snug mt-1">20 months · Sep 2025 — Apr 2027</dd></div>
+              <div class="border-t border-teal-ink/15 pt-4"><dt class="text-[10px] uppercase tracking-widest text-muted-ink">Programme</dt><dd class="font-serif-display text-xl text-teal-ink leading-snug mt-1">Erasmus+ · Key Action 2</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============= TIMELINE ============= -->
+      <section id="timeline" class="relative py-24 lg:py-32">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <div class="max-w-2xl mb-14">
+            <div class="label-eyebrow text-terracotta mb-4">Activities &amp; timeline</div>
+            <h2 class="font-serif-display text-4xl sm:text-5xl text-teal-ink leading-tight">Twenty months, <em class="italic text-terracotta">nine work strands.</em></h2>
+            <p class="mt-5 text-base text-muted-ink">From kick-off in Italy to the final meeting, the partnership follows a structured plan of research, co-design, pilot-testing and dissemination across the three countries.</p>
+          </div>
+
+          <ol class="relative border-l border-teal-ink/15 ml-4 space-y-8">
+            <li class="relative pl-8"><span class="timeline-dot"></span><div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-6"><div class="label-eyebrow text-terracotta w-20 shrink-0">Activity 1</div><div class="flex-1"><h3 class="font-serif-display text-2xl text-teal-ink leading-snug">Project Management</h3><div class="mt-1 text-xs text-muted-ink">Sep 2025 — Apr 2027</div></div></div></li>
+            <li class="relative pl-8"><span class="timeline-dot"></span><div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-6"><div class="label-eyebrow text-terracotta w-20 shrink-0">Activity 2</div><div class="flex-1"><h3 class="font-serif-display text-2xl text-teal-ink leading-snug">Kick-off Meeting</h3><div class="mt-1 text-xs text-muted-ink">18 – 20 Sep 2025</div></div></div></li>
+            <li class="relative pl-8"><span class="timeline-dot"></span><div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-6"><div class="label-eyebrow text-terracotta w-20 shrink-0">Activity 3</div><div class="flex-1"><h3 class="font-serif-display text-2xl text-teal-ink leading-snug">Preparation &amp; Research</h3><div class="mt-1 text-xs text-muted-ink">Oct — Dec 2025</div></div></div></li>
+            <li class="relative pl-8"><span class="timeline-dot"></span><div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-6"><div class="label-eyebrow text-terracotta w-20 shrink-0">Activity 4</div><div class="flex-1"><h3 class="font-serif-display text-2xl text-teal-ink leading-snug">Toolkit Development, Internal Testing &amp; Training</h3><div class="mt-1 text-xs text-muted-ink">Jan — May 2026</div></div></div></li>
+            <li class="relative pl-8"><span class="timeline-dot"></span><div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-6"><div class="label-eyebrow text-terracotta w-20 shrink-0">Activity 5</div><div class="flex-1"><h3 class="font-serif-display text-2xl text-teal-ink leading-snug">Midterm Meeting</h3><div class="mt-1 text-xs text-muted-ink">26 – 28 Jun 2026</div></div></div></li>
+            <li class="relative pl-8"><span class="timeline-dot"></span><div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-6"><div class="label-eyebrow text-terracotta w-20 shrink-0">Activity 6</div><div class="flex-1"><h3 class="font-serif-display text-2xl text-teal-ink leading-snug">Pilot-testing of the Toolkit in Schools</h3><div class="mt-1 text-xs text-muted-ink">Sep 2026 — Feb 2027</div></div></div></li>
+            <li class="relative pl-8"><span class="timeline-dot"></span><div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-6"><div class="label-eyebrow text-terracotta w-20 shrink-0">Activity 7</div><div class="flex-1"><h3 class="font-serif-display text-2xl text-teal-ink leading-snug">Student Final Projects</h3><div class="mt-1 text-xs text-muted-ink">Mar — Apr 2027</div></div></div></li>
+            <li class="relative pl-8"><span class="timeline-dot"></span><div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-6"><div class="label-eyebrow text-terracotta w-20 shrink-0">Activity 8</div><div class="flex-1"><h3 class="font-serif-display text-2xl text-teal-ink leading-snug">Dissemination</h3><div class="mt-1 text-xs text-muted-ink">Sep 2025 — Apr 2027</div></div></div></li>
+            <li class="relative pl-8"><span class="timeline-dot"></span><div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-6"><div class="label-eyebrow text-terracotta w-20 shrink-0">Activity 9</div><div class="flex-1"><h3 class="font-serif-display text-2xl text-teal-ink leading-snug">Final Meeting</h3><div class="mt-1 text-xs text-muted-ink">25 – 27 Apr 2027</div></div></div></li>
+          </ol>
+
+          <div class="mt-16 grid md:grid-cols-3 gap-6">
+            <div class="card-paper rounded-3xl p-7">
+              <div class="w-12 h-12 rounded-2xl bg-teal-ink text-cream flex items-center justify-center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+              <div class="font-serif-display text-xl text-teal-ink mt-5">Target groups</div>
+              <p class="text-sm text-muted-ink mt-2 leading-relaxed">Educators, students (ages 12–16), schools, parents, policymakers and the wider educational community.</p>
+            </div>
+            <div class="card-paper rounded-3xl p-7">
+              <div class="w-12 h-12 rounded-2xl bg-teal-ink text-cream flex items-center justify-center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+              <div class="font-serif-display text-xl text-teal-ink mt-5">Expected outputs</div>
+              <p class="text-sm text-muted-ink mt-2 leading-relaxed">AI &amp; Media Literacy toolkit, research report, student final projects, policy recommendations and a sustainable network of educators.</p>
+            </div>
+            <div class="card-paper rounded-3xl p-7">
+              <div class="w-12 h-12 rounded-2xl bg-teal-ink text-cream flex items-center justify-center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+              <div class="font-serif-display text-xl text-teal-ink mt-5">Long-term impact</div>
+              <p class="text-sm text-muted-ink mt-2 leading-relaxed">Sustainable integration of AI literacy in schools and scalable, transferable resources for the wider European education ecosystem.</p>
+            </div>
+          </div>
+
+          <div class="mt-16 card-paper rounded-3xl p-8 lg:p-10 flex flex-col md:flex-row items-center gap-8">
+            <img src="images/erasmus-logo.png" alt="Erasmus+" class="h-16 object-contain" />
+            <div class="text-center md:text-left">
+              <div class="font-serif-display text-2xl text-teal-ink">Co-funded by the European Union</div>
+              <p class="text-sm text-muted-ink mt-2 max-w-2xl">This project is funded under the Erasmus+ Programme, Key Action 2 — <span class="text-teal-ink font-medium">Small-scale partnerships in school education (KA210-SCH)</span>. Reference: KA210-SCH-5B5F9374 · Call 2025, Round 1.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============= CONTACT ============= -->
+      <section id="contact" class="relative py-24 lg:py-32 bg-cream-alt">
+        <div class="max-w-6xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-12">
+          <div class="lg:col-span-5">
+            <div class="label-eyebrow text-terracotta mb-4">Stay in the loop</div>
+            <h2 class="font-serif-display text-4xl sm:text-5xl text-teal-ink leading-tight">Interested in the <em class="italic text-terracotta">toolkit?</em></h2>
+            <p class="mt-6 text-base text-muted-ink leading-relaxed">The project is currently in development. Leave a short note below — once the toolkit is ready and an official project mailing list is in place, the partners will reach out with updates and pilot opportunities.</p>
+            <div class="mt-10 space-y-4">
+              <div class="flex items-center gap-4 text-sm text-teal-ink"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D97C3F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>Italy · Serbia · Portugal</div>
+              <div class="flex items-center gap-4 text-sm text-teal-ink"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D97C3F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>Erasmus+ KA210-SCH-5B5F9374</div>
+            </div>
+          </div>
+
+          <form id="contact-form" class="lg:col-span-7 card-paper rounded-3xl p-8 lg:p-10 space-y-5">
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="name" class="text-xs uppercase tracking-widest text-teal-ink block">Name</label>
+                <input id="name" name="name" type="text" placeholder="Jane Doe" class="form-input mt-2" />
+              </div>
+              <div>
+                <label for="email" class="text-xs uppercase tracking-widest text-teal-ink block">Email</label>
+                <input id="email" name="email" type="email" placeholder="jane@school.eu" class="form-input mt-2" />
+              </div>
+            </div>
+            <div>
+              <label for="role" class="text-xs uppercase tracking-widest text-teal-ink block">Your role</label>
+              <input id="role" name="role" type="text" placeholder="Teacher, school leader, researcher…" class="form-input mt-2" />
+            </div>
+            <div>
+              <label for="message" class="text-xs uppercase tracking-widest text-teal-ink block">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us how you'd use the toolkit in your classroom…" class="form-input mt-2 resize-y"></textarea>
+            </div>
+            <div class="flex flex-col sm:flex-row sm:items-center gap-4 pt-2">
+              <button type="submit" class="btn-terra rounded-full px-7 h-12 text-sm font-medium inline-flex items-center gap-2 border-0">
+                Send message
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </button>
+              <p class="text-xs text-muted-ink">This form is informational only — no contact details are stored or sent at this stage of the project.</p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- ============= FOOTER ============= -->
+      <footer class="relative bg-teal-ink text-cream pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <div class="grid lg:grid-cols-12 gap-12 pb-14 border-b border-cream/15">
+            <div class="lg:col-span-5">
+              <div class="flex items-center gap-3">
+                <img src="images/project-logo.png" alt="AI and Media Literacy" class="h-12 w-12 object-contain" />
+                <div>
+                  <div class="font-serif-display text-xl">AI &amp; Media Literacy</div>
+                  <div class="label-eyebrow text-cream/70">A Toolkit for Educators</div>
+                </div>
+              </div>
+              <p class="mt-6 text-sm text-cream/70 max-w-md leading-relaxed">AIMLATE — a small-scale Erasmus+ partnership in school education (KA210-SCH) between Italy, Serbia and Portugal, equipping educators with classroom-ready resources on AI and media literacy.</p>
+              <p class="mt-3 text-[11px] uppercase tracking-widest text-cream/55">Ref. KA210-SCH-5B5F9374 · Call 2025</p>
+            </div>
+            <div class="lg:col-span-3">
+              <div class="label-eyebrow text-cream/60 mb-4">Explore</div>
+              <ul class="space-y-3 text-sm">
+                <li><a href="#about" class="text-cream/85 hover:text-cream transition-colors">About</a></li>
+                <li><a href="#countries" class="text-cream/85 hover:text-cream transition-colors">Partners</a></li>
+                <li><a href="#toolkit" class="text-cream/85 hover:text-cream transition-colors">Toolkit</a></li>
+                <li><a href="#topics" class="text-cream/85 hover:text-cream transition-colors">Topics</a></li>
+                <li><a href="#timeline" class="text-cream/85 hover:text-cream transition-colors">Timeline</a></li>
+                <li><a href="#contact" class="text-cream/85 hover:text-cream transition-colors">Contact</a></li>
+              </ul>
+            </div>
+            <div class="lg:col-span-4">
+              <div class="label-eyebrow text-cream/60 mb-4">Co-funded by</div>
+              <div class="bg-cream/5 border border-cream/15 rounded-2xl p-5 flex items-center gap-5">
+                <img src="images/erasmus-logo.png" alt="Erasmus+" class="h-14 object-contain bg-white rounded-md p-1" />
+                <p class="text-xs text-cream/75 leading-snug">Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them.</p>
+              </div>
+            </div>
+          </div>
+          <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-cream/60">
+            <div>© <span id="year">2025</span> AI &amp; Media Literacy Erasmus+ project. All rights reserved.</div>
+            <div class="flex items-center gap-5 flex-wrap justify-center"><span>Italy · Serbia · Portugal</span><span class="text-cream/40">·</span><span>Made for educators, with educators.</span></div>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

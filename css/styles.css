@@ -1,0 +1,283 @@
+/* AI and Media Literacy — Erasmus+ landing page styles
+   Companion file to index.html (Tailwind CDN provides the utility classes).
+   Defines design tokens, custom utilities and a few extra patterns. */
+
+:root {
+    --cream: #F9F7F3;
+    --cream-alt: #F2EFE9;
+    --teal: #2A7F8C;
+    --teal-deep: #1F6B7A;
+    --teal-ink: #123035;
+    --terracotta: #D97C3F;
+    --terracotta-deep: #C6692E;
+    --yellow: #E4AE42;
+    --ink: #123035;
+    --muted: #4A6D73;
+}
+
+html, body {
+    margin: 0;
+    background-color: var(--cream);
+    color: var(--ink);
+    font-family: 'Outfit', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+
+.font-serif-display {
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: -0.015em;
+}
+
+.font-sans-ui {
+    font-family: 'Outfit', system-ui, sans-serif;
+}
+
+.label-eyebrow {
+    font-family: 'Outfit', system-ui, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-size: 0.72rem;
+    font-weight: 500;
+}
+
+/* ----- Custom colors (Tailwind doesn't know about these tokens) ----- */
+.bg-cream { background-color: var(--cream); }
+.bg-cream-alt { background-color: var(--cream-alt); }
+.bg-teal { background-color: var(--teal); }
+.bg-teal-ink { background-color: var(--teal-ink); }
+.bg-terracotta { background-color: var(--terracotta); }
+
+.text-cream { color: var(--cream) !important; }
+.text-cream\/85 { color: rgba(249, 247, 243, 0.85) !important; }
+.text-cream\/80 { color: rgba(249, 247, 243, 0.8) !important; }
+.text-cream\/75 { color: rgba(249, 247, 243, 0.75) !important; }
+.text-cream\/70 { color: rgba(249, 247, 243, 0.7) !important; }
+.text-cream\/60 { color: rgba(249, 247, 243, 0.6) !important; }
+.text-cream\/55 { color: rgba(249, 247, 243, 0.55) !important; }
+.text-cream\/40 { color: rgba(249, 247, 243, 0.4) !important; }
+.text-teal { color: var(--teal); }
+.text-teal-ink { color: var(--teal-ink); }
+.text-teal-ink\/80 { color: rgba(18, 48, 53, 0.8); }
+.text-teal-ink\/70 { color: rgba(18, 48, 53, 0.7); }
+.text-teal-ink\/30 { color: rgba(18, 48, 53, 0.3); }
+.text-terracotta { color: var(--terracotta); }
+.text-muted-ink { color: var(--muted); }
+.text-yellow { color: var(--yellow); }
+
+.border-teal-ink { border-color: var(--teal-ink); }
+.border-teal-ink\/10 { border-color: rgba(18, 48, 53, 0.1); }
+.border-teal-ink\/15 { border-color: rgba(18, 48, 53, 0.15); }
+.border-teal-ink\/20 { border-color: rgba(18, 48, 53, 0.2); }
+.border-teal-ink\/30 { border-color: rgba(18, 48, 53, 0.3); }
+.border-cream\/10 { border-color: rgba(249, 247, 243, 0.1); }
+.border-cream\/15 { border-color: rgba(249, 247, 243, 0.15); }
+.border-cream\/20 { border-color: rgba(249, 247, 243, 0.2); }
+
+.bg-cream\/5 { background-color: rgba(249, 247, 243, 0.05); }
+.bg-cream\/10 { background-color: rgba(249, 247, 243, 0.1); }
+.bg-cream\/90 { background-color: rgba(249, 247, 243, 0.9); }
+.bg-teal-ink\/30 { background-color: rgba(18, 48, 53, 0.3); }
+.bg-teal-ink\/90 { background-color: rgba(18, 48, 53, 0.9); }
+.bg-terracotta\/10 { background-color: rgba(217, 124, 63, 0.1); }
+.bg-terracotta\/15 { background-color: rgba(217, 124, 63, 0.15); }
+.bg-terracotta\/30 { background-color: rgba(217, 124, 63, 0.3); }
+.bg-terracotta\/90 { background-color: rgba(217, 124, 63, 0.9); }
+.bg-teal\/20 { background-color: rgba(42, 127, 140, 0.2); }
+.bg-teal\/30 { background-color: rgba(42, 127, 140, 0.3); }
+
+/* ----- Buttons ----- */
+.btn-teal {
+    background-color: var(--teal-ink);
+    color: var(--cream);
+    border: 0;
+    cursor: pointer;
+    transition: transform 220ms ease, background-color 220ms ease, box-shadow 220ms ease;
+}
+.btn-teal:hover {
+    background-color: var(--teal-deep);
+    transform: translateY(-1px);
+    box-shadow: 0 10px 30px -12px rgba(18, 48, 53, 0.45);
+}
+
+.btn-terra {
+    background-color: var(--terracotta);
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    transition: transform 220ms ease, background-color 220ms ease, box-shadow 220ms ease;
+}
+.btn-terra:hover {
+    background-color: var(--terracotta-deep);
+    transform: translateY(-1px);
+    box-shadow: 0 10px 30px -12px rgba(217, 124, 63, 0.5);
+}
+
+.btn-ghost-ink {
+    border: 1px solid rgba(18, 48, 53, 0.2);
+    color: var(--teal-ink);
+    background: transparent;
+    transition: all 220ms ease;
+}
+.btn-ghost-ink:hover {
+    border-color: var(--teal-ink);
+    background: rgba(18, 48, 53, 0.04);
+}
+
+/* ----- Cards ----- */
+.card-paper {
+    background: #fff;
+    border: 1px solid rgba(18, 48, 53, 0.08);
+    box-shadow: 0 1px 0 rgba(18, 48, 53, 0.03), 0 30px 60px -40px rgba(18, 48, 53, 0.18);
+}
+
+/* ----- Topic chip ----- */
+.topic-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    border-radius: 9999px;
+    border: 1px solid rgba(249, 247, 243, 0.2);
+    background-color: rgba(249, 247, 243, 0.05);
+    transition: background-color 220ms ease;
+    color: var(--cream);
+    font-size: 0.875rem;
+}
+.topic-chip:hover { background-color: rgba(249, 247, 243, 0.1); }
+.topic-chip::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 9999px;
+    background-color: var(--yellow);
+    display: inline-block;
+}
+
+/* ----- Scenario card ----- */
+.scenario-card {
+    position: relative;
+    border-radius: 1.5rem;
+    padding: 1.75rem;
+    border: 1px solid rgba(249, 247, 243, 0.1);
+    background-color: rgba(249, 247, 243, 0.04);
+    backdrop-filter: blur(6px);
+    transition: background-color 220ms ease;
+}
+.scenario-card:hover { background-color: rgba(249, 247, 243, 0.08); }
+@media (min-width: 1024px) { .scenario-card { padding: 2rem; } }
+
+/* ----- Timeline dot ----- */
+.timeline-dot {
+    position: absolute;
+    left: -11px;
+    top: 6px;
+    width: 20px;
+    height: 20px;
+    border-radius: 9999px;
+    background-color: var(--cream);
+    border: 2px solid var(--terracotta);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.timeline-dot::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 9999px;
+    background-color: var(--terracotta);
+}
+
+/* ----- Form input ----- */
+.form-input {
+    width: 100%;
+    height: 3rem;
+    background-color: var(--cream);
+    border: 1px solid rgba(18, 48, 53, 0.15);
+    border-radius: 0.75rem;
+    padding: 0 1rem;
+    font: inherit;
+    color: var(--ink);
+    outline: none;
+    transition: border-color 200ms ease, box-shadow 200ms ease;
+}
+.form-input:focus {
+    border-color: var(--teal-ink);
+    box-shadow: 0 0 0 3px rgba(42, 127, 140, 0.15);
+}
+textarea.form-input { height: auto; padding: 0.75rem 1rem; }
+
+/* ----- Grain overlays ----- */
+.grain { position: relative; }
+.grain::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.07 0 0 0 0 0.19 0 0 0 0 0.21 0 0 0 0.18 0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.55'/></svg>");
+    opacity: 0.35;
+    mix-blend-mode: multiply;
+    z-index: 0;
+}
+.grain-light { position: absolute; inset: 0; }
+.grain-light::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.12 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    opacity: 0.5;
+    z-index: 0;
+}
+
+/* ----- Animations ----- */
+@keyframes float-slow {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-12px) rotate(2deg); }
+}
+.float-slow { animation: float-slow 9s ease-in-out infinite; }
+
+@keyframes fade-up {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fade-up 700ms ease-out both; }
+
+/* ----- Sticky nav scrolled state ----- */
+header.scrolled {
+    background-color: rgba(249, 247, 243, 0.85);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(18, 48, 53, 0.1);
+}
+
+/* ----- Toast ----- */
+.toast {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    z-index: 100;
+    padding: 14px 20px;
+    border-radius: 14px;
+    color: #fff;
+    font-size: 0.9rem;
+    box-shadow: 0 20px 40px -16px rgba(0, 0, 0, 0.25);
+    transform: translateY(-30px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms ease, transform 250ms ease;
+    max-width: 360px;
+}
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.toast.success { background-color: var(--teal-ink); }
+.toast.error { background-color: var(--terracotta-deep); }
+
+/* ----- Selection ----- */
+::selection { background-color: var(--terracotta); color: #fff; }
+
+/* ----- Mobile menu open ----- */
+#mobile-menu.open { display: flex; }
